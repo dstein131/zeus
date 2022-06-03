@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/65cfa62bcc.js" crossorigin="anonymous"></script>
+    <title>Auctions</title>
+</head>
+
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/zeus-logo-xlarge-white[3828].png" height="30px" alt="">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index.html">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Auctions
+                    </a>
+                    <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item bg-dark text-light" href="#">Online Auctions</a>
+                      <a class="dropdown-item bg-dark text-light" href="#">*Practice/Demonstration* Auctions</a>
+                      
+                    </div>
+                  </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tools
+                  </a>
+                  <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item bg-dark text-light" href="#">Admin Tools</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Treasurer Tools</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Manage Bidder</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Manage County</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Manage Sales</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Content Management</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Inquiry</a>
+                    <a class="dropdown-item bg-dark text-light" href="#">Inquiry (Legacy)</a>
+                  </div>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Inquiry
+                    </a>
+                    <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item bg-dark text-light" href="#">Inquiry</a>
+                      <a class="dropdown-item bg-dark text-light" href="#">Inquiry(Legacy)</a>
+                      <a class="dropdown-item bg-dark text-light" href="#">Something else here</a>
+                    </div>
+                  </li> -->
+                  
+                
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Support
+                        </a>
+                        <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item bg-dark text-light" href="#">Support (Knowledge Base)</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">Help</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">FAQs</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">Release Notes</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">Tutorials</a>
+                        </div>
+                      </li>
+                </ul>
+                <ul class="navbar-nav"> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Notifications
+                        </a>
+                        <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item bg-dark text-light" href="#">Map</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">All</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">Notifications</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">Here</a>
+                        </div>
+                    </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          ${Username}
+                        </a>
+                        <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item bg-dark text-light" href="#">My Account</a>
+                          <a class="dropdown-item bg-dark text-light" href="#">Logout</a>
+                        </div>
+                      </li>
+                    </ul>
+              
+            </div>
+          </nav>
+    </navbar>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Live Auctions</li>
+        </ol>
+      </nav>
+    <div class="container p-0" style="border: 1px solid #8bc34a">
+        <nav class="nav justify-content-between" style="background-color: #8bc34a">
+            <div style="display: flex">
+            <a class="nav-link active" href="#">Auctions</a>
+            <!-- <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a> -->
+            </div>
+            <form class="form-inline mb-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="search..." aria-label="Search">
+                <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+              </form>
+          </nav>
+          <table class="table">
+            <thead>
+              <tr>
+                <!-- <th scope="col">#</th> -->
+                <th scope="col">Auction</th>
+                <th scope="col">Times</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>
+                    <ul style="list-style-type:none; margin:0; padding: 0;"><h6>Louisiana Tax Title Sale Demo</h6>
+                        <li>(Bid Down / No Deposit / Auto Approval) </li>
+                        <li>Items: 33</li>
+                        <li>Bidders: 1</li>
+                        <li><button type="button" class="btn btn-info btn-sm mt-1">download list</button></li>
+
+                    </ul>
+                </td>
+                <td>
+                  <ul style="list-style-type:none; margin:0; padding: 0;">
+                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
+                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
+                  </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:none; margin:0; padding: 0;">
+                        <li><b>Registration open until:</b></li>
+                        <li>10/13/2022 6:00 PM EDT</li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Enter Auction</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Manage Bidder</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Invoices</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Edit Bidders</button></li>
+                    </ul>
+                </td>
+              </tr>
+              
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>
+                    <ul style="list-style-type:none; margin:0; padding: 0;"><h6>Colorado Tax Title Sale Demo</h6>
+                        <li>(Bid Down / No Deposit / Auto Approval) </li>
+                        <li>Items: 33</li>
+                        <li>Bidders: 1</li>
+                        <li><button type="button" class="btn btn-info btn-sm mt-1">download list</button></li>
+
+                    </ul>
+                </td>
+                <td>
+                  <ul style="list-style-type:none; margin:0; padding: 0;">
+                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
+                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
+                  </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:none; margin:0; padding: 0;">
+                        <li><b>Registration open until:</b></li>
+                        <li>10/13/2022 6:00 PM EDT</li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Enter Auction</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Manage Bidder</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Invoices</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Edit Bidders</button></li>
+                    </ul>
+                </td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>
+                    <ul style="list-style-type:none; margin:0; padding: 0;"><h6>Indiana Tax Title Sale Demo</h6>
+                        <li>(Bid Down / No Deposit / Auto Approval) </li>
+                        <li>Items: 33</li>
+                        <li>Bidders: 1</li>
+                        <li><button type="button" class="btn btn-info btn-sm mt-1">download list</button></li>
+
+                    </ul>
+                </td>
+                <td>
+                  <ul style="list-style-type:none; margin:0; padding: 0;">
+                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
+                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
+                  </ul>
+                </td>
+                <td>
+                    <ul style="list-style-type:none; margin:0; padding: 0;">
+                        <li><b>Registration open until:</b></li>
+                        <li>10/13/2022 6:00 PM EDT</li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Enter Auction</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Manage Bidder</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Invoices</button></li>
+                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Edit Bidders</button></li>
+                    </ul>
+                </td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">2</th> -->
+                <td>Showing 1 to 25 of 1 entries</td>
+                <td>
+                    <div style="display: flex; flex-direction: column">
+                    <span><i class="fa fa-circle-o font-yellow">
+                    </i>Not Started</span>
+                    <span>Active</span>
+                    <span>Closed</span>
+                    </div>
+                </td>
+                <td>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-sm justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+</body>
+</html>
