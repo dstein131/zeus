@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/65cfa62bcc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+  
+    
     <title>Auctions</title>
 </head>
 
@@ -101,157 +104,70 @@
             </div>
           </nav>
     </navbar>
+   
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/index.html">Dashboard</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Auctions</li>
+          <li class="breadcrumb-item active" aria-current="page">Manage Bidder</li>
         </ol>
       </nav>
-    <div class="container p-0" style="border: 1px solid #8bc34a">
-        <nav class="nav justify-content-between" style="background-color: #8bc34a">
+
+    <div class="container p-0" style="border: 1px solid #00bcd4">
+        <nav class="nav justify-content-between" style="background-color: #00bcd4">
             <div style="display: flex">
                 <span class="navbar-text text-white pl-2">
-                Auctions
+                    Manage Bidder
                   </span>
-            <!-- <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#">Disabled</a> -->
-            </div>
-            <form class="form-inline mb-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="search..." aria-label="Search">
-                <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-              </form>
+        
           </nav>
-          <div class="table-resonsive">
-            <table class="table mx-auto" style="max-width: 80%">
-            <thead>
-              <tr class="d-flex">
-                <!-- <th scope="col">#</th> -->
-                <th class="col-4" >Auction</th>
-                <th class="col-4">Times</th>
-                <th class="col-4">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="d-flex">
-                <!-- <th scope="row">1</th> -->
-                <td class="col-4">
-                    <ul style="list-style-type:none; margin:0; padding: 0;"><h6>Louisiana Tax Title Sale Demo</h6>
-                        <li>(Bid Down / No Deposit / Auto Approval) </li>
-                        <li>Items: 33</li>
-                        <li>Bidders: 1</li>
-                        <li><button type="button" class="btn btn-info btn-sm mt-1">download list</button></li>
+          <div class="container">
+              <div class="row">
+                  <div class="col-3 border-bottom">Form W-9</div>
+                  <div class="col-6 border-bottom border-left border-right">Request for Taxpayer
+                    Identification Number and Certification</div>
+                  <div class="col-3 border-bottom">Give form to the requester. Do not send to the IRS.</div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name (as shown on your income tax return)</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter name...">
+                        <small id="emailHelp" class="form-text text-muted">(All tax sale certificates of purchase, assignment, and tax deeds will be issued in the bidder's name as shown below, and address shown below.)</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail2">Business name/disregarded entity name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="enter name...">
+                        <small id="emailHelp" class="form-text text-muted">if different from above</small>
+                      </div>
+                      <!-- <div class="form-group">
+                      <select id="countries" name="countries"></select>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="countries">Select Country</label>
+                        <select class="form-control" id="countries" name="counties">
+                            
+                          <!-- <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option> -->
+                        </select>
+                      </div>
+                </form>
+            </div>
 
-                    </ul>
-                </td>
-                <td class="col-4">
-                  <ul style="list-style-type:none; margin:0; padding: 0;">
-                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
-                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
-                  </ul>
-                </td>
-                <td class="col-4">
-                    <ul style="list-style-type:none; margin:0; padding: 0;">
-                        <li><b>Registration ends:</b></li>
-                        <li>10/13/2022 6:00 PM EDT</li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Enter Auction</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Manage Bidder</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Invoices</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Edit Bidders</button></li>
-                    </ul>
-                </td>
-              </tr>
-              
-              <tr class="d-flex"> 
-                <!-- <th scope="row">1</th> -->
-                <td class="col-4">
-                    <ul style="list-style-type:none; margin:0; padding: 0;"><h6>Colorado Tax Title Sale Demo</h6>
-                        <li>(Bid Down / No Deposit / Auto Approval) </li>
-                        <li>Items: 33</li>
-                        <li>Bidders: 1</li>
-                        <li><button type="button" class="btn btn-info btn-sm mt-1">download list</button></li>
+              </div>
 
-                    </ul>
-                </td>
-                <td class="col-4">
-                  <ul style="list-style-type:none; margin:0; padding: 0;">
-                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
-                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
-                  </ul>
-                </td>
-                <td class="col-4">
-                    <ul style="list-style-type:none; margin:0; padding: 0;">
-                        <li><b>Registration ends:</b></li>
-                        <li>10/13/2022 6:00 PM EDT</li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Enter Auction</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Manage Bidder</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Invoices</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Edit Bidders</button></li>
-                    </ul>
-                </td >
-              </tr>
-              <tr class="d-flex">
-                <!-- <th scope="row">1</th> -->
-                <td class="col-4">
-                    <ul style="list-style-type:none; margin:0; padding: 0;"><h6>Indiana Tax Title Sale Demo</h6>
-                        <li>(Bid Down / No Deposit / Auto Approval) </li>
-                        <li>Items: 33</li>
-                        <li>Bidders: 1</li>
-                        <li><button type="button" class="btn btn-info btn-sm mt-1">download list</button></li>
-
-                    </ul>
-                </td>
-                <td class="col-4">
-                  <ul style="list-style-type:none; margin:0; padding: 0;">
-                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
-                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
-                  </ul>
-                </td>
-                <td class="col-4">
-                    <ul style="list-style-type:none; margin:0; padding: 0;">
-                        <li><b>Registration ends:</b></li>
-                        <li>10/13/2022 6:00 PM EDT</li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Enter Auction</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Manage Bidder</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Invoices</button></li>
-                        <li><button type="button" class="btn btn-sm btn-outline-success mt-1">Edit Bidders</button></li>
-                    </ul>
-                </td>
-              </tr>
-              <tr class="d-flex">
-                <!-- <th scope="row">2</th> -->
-                <td class="col-4">Showing 1 to 25 of 1 entries</td>
-                <td class="col-4">
-                    <div style="display: flex; flex-direction: column">
-                    <span>Not Started</span>
-                    <span>Active</span>
-                    <span>Closed</span>
-                    </div>
-                </td>
-                <td class="col-4">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-sm justify-content-end">
-                          <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                          </li>
-                        </ul>
-                      </nav>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </div>
           
-        </div>
     </div>
- 
+
+    
+    <script src="countries.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
 </body>
 </html>
