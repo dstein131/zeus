@@ -112,7 +112,7 @@
         </ol>
       </nav>
 
-    <div class="container p-0" style="border: 1px solid #00bcd4">
+    <div class="container p-0" style="border: 1px solid #00bcd4; width: 98%;">
         <nav class="nav justify-content-between" style="background-color: #00bcd4">
             <div style="display: flex">
                 <span class="navbar-text text-white pl-2">
@@ -133,7 +133,7 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name (as shown on your income tax return)</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter name...">
-                        <small id="emailHelp" class="form-text text-muted">(All tax sale certificates of purchase, assignment, and tax deeds will be issued in the bidder's name as shown below, and address shown below.)</small>
+                        <small id="emailHelp" class="form-text text-muted">(All tax sale certificates of purchase, assignment, and tax deeds will be issued in the bidder's name as shown above, and address shown below.)</small>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail2">Business name/disregarded entity name</label>
@@ -305,42 +305,47 @@
                             </div>
                           
                         </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                          </div>
-                          <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                          </div>
-                          <div class="form-group">
-                            <label for="countries">Select Country</label>
-                            <select class="form-control" id="countries2"  name="countries">
-                                
-                              <!-- <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option> -->
-                            </select>
-                          </div>
-                          <div class="form-row border-bottom">
-                            <div class="form-group col-md-6">
-                              <label for="inputCity">City</label>
-                              <input type="text" class="form-control" id="inputCity">
+                        <div class="border">
+                            <div class="bg-secondary text-light">Mailing Address (if different from above):</div>
+                                <div class="container">
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-group">
+                                    <label for="countries">Select Country</label>
+                                    <select class="form-control" id="countries2"  name="countries">
+                                        
+                                    <!-- <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-row border-bottom">
+                                    <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState2" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group col-md-4">
-                              <label for="inputState">State</label>
-                              <select id="inputState2" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-2">
-                              <label for="inputZip">Zip</label>
-                              <input type="text" class="form-control" id="inputZip">
-                            </div>
-                          </div>
+                        </div>
 
                           <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
