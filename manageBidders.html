@@ -130,11 +130,13 @@
               <div class="row">
                   <div class="col">
                 <form>
+                    
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="col-form-label-sm">Name (as shown on your income tax return)</label>
                         <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter name...">
                         <small id="emailHelp" class="form-text text-muted">(All tax sale certificates of purchase, assignment, and tax deeds will be issued in the bidder's name as shown above, and address shown below.)</small>
                       </div>
+                      
                       <div class="form-group">
                         <label for="exampleInputEmail2" class="col-form-label-sm">Business name/disregarded entity name</label>
                         <input type="email" class="form-control form-control-sm" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="enter name...">
@@ -406,7 +408,10 @@
                                 Non US Resident
                             </label>
                           </div>
-                          <button type="submit" class="btn btn-info mt-3">Save Changes</button>
+                          <div class="alert alert-warning mt-2" role="alert">
+                            Changing the W9 information at this location does not change the information associated with approved sale registrations.
+                          </div>
+                          <button type="submit" class="btn btn-info">Save Changes</button>
 
 
                 </form>
