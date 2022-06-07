@@ -102,7 +102,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/index.html">Dashboard</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Admin Tools</li>
+      <li class="breadcrumb-item active" aria-current="page">My Account</li>
     </ol>
   </nav>
 <body>
@@ -115,23 +115,64 @@
 <div class="container mt-5">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Noticing</a>
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Certified List</a>
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Account</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">DMS Imports</a>
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Multi-Bid History</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#certlist" role="tab" aria-controls="contact" aria-selected="false">Skip Tracing Parcing</a>
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#certlist" role="tab" aria-controls="contact" aria-selected="false">Invoices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#actlist" role="tab" aria-controls="contact" aria-selected="false">Activities</a>
           </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">These are temporary</div>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+            <div class="container mt-3">
+                <p class="h3">SRI Username</p>
+                <p>zeusQA@sriservices.com</p>
+                <p>ZeusQA</p>
+            </div>
+
+
+
+
+            
+            <div class="container mt-5">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="activebid-tab" data-toggle="tab" href="#activebid" role="tab" aria-controls="home" aria-selected="true">Active Bids</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="totalcommit-tab" data-toggle="tab" href="#totalcommit" role="tab" aria-controls="profile" aria-selected="false">Total Committed</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="myaucts-tab" data-toggle="tab" href="#myaucts" role="tab" aria-controls="contact" aria-selected="false">My Auctions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="leadingbids-tab" data-toggle="tab" href="#leadingbids" role="tab" aria-controls="contact" aria-selected="false">Leading Bids</a>
+                      </li>
+                      
+                  </ul>
+                  <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="activebid" role="tabpanel" aria-labelledby="home-tab">These are temporary</div>
+                    <div class="tab-pane fade" id="totalcommit" role="tabpanel" aria-labelledby="profile-tab">We will be changing the content</div>
+                    <div class="tab-pane fade" id="myaucts" role="tabpanel" aria-labelledby="contact-tab">This is just a front-end shell</div>
+                    <div class="tab-pane fade" id="leadingsbids" role="tabpanel" aria-labelledby="certlist-tab">Maybe all the tools get wrapped in here?</div>
+                  </div>
+            
+            </div>
+
+        </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">We will be changing the content</div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">This is just a front-end shell</div>
         <div class="tab-pane fade" id="certlist" role="tabpanel" aria-labelledby="certlist-tab">Maybe all the tools get wrapped in here?</div>
+        <div class="tab-pane fade" id="actlist" role="tabpanel" aria-labelledby="certlist-tab">Activities!</div>
       </div>
 
 </div>
