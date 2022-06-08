@@ -108,7 +108,8 @@
       <nav  class="bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb ms-2">
           <li class="breadcrumb-item"><a href="/index.html">Dashoard</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Auctions</li>
+          <li class="breadcrumb-item"><a href="/auctions.html">Auctions</a></li>
+          <!-- <li class="breadcrumb-item active" aria-current="page"> ${saleName} Tax Sale Auction </li> -->
         </ol>
       </nav>
 
@@ -126,7 +127,72 @@
             </div>
             
           </nav>
-
+          <ul class="nav nav-tabs mb-3 mt-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rules</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-itemlist-tab" data-bs-toggle="pill" data-bs-target="#pills-itemlist" type="button" role="tab" aria-controls="pills-itemlist" aria-selected="false">Item List</button>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-multibid-tab" data-bs-toggle="pill" data-bs-target="#pills-multibid" type="button" role="tab" aria-controls="pills-multibid" aria-selected="false">Multi-Bid Upload</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-registered-tab" data-bs-toggle="pill" data-bs-target="#pills-registered" type="button" role="tab" aria-controls="pills-registered" aria-selected="false">Registered Bidders</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-activity-tab" data-bs-toggle="pill" data-bs-target="#pills-activity" type="button" role="tab" aria-controls="pills-activity" aria-selected="false">Bidder Activity</button>
+              </li>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade  show active" id="pills-itemlist" role="tabpanel" aria-labelledby="pills-itemlist-tab">
+                <div class="container d-flex flex-row flex-wrap justify-content-around">
+                    <div class="card m-2 bg-light" style="width: 23rem;">
+                                                
+                        <div class="card-body">
+                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
+                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
+                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
+                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
+                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
+                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
+                            <p class="card-text mb-0"><small><b>Legal: </b>
+                                5 'A' 66' X 103'</small></p>
+                            
+                            
+                        </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
+                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
+                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
+                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
+                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
+                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
+                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
+                            </ul>
+                        <div class="card-body">
+                            <div class="card-body d-flex justify-content-center align-items-center">
+                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                                <div class="container d-flex flex-row justify-content-around">
+                                <button type="button" class="btn  btn-primary">Place Bid</button>
+                                <button type="button" class="btn  btn-success">Parcel Details</button>
+                            </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-multibid" role="tabpanel" aria-labelledby="pills-multibid-tab">...</div>
+            <div class="tab-pane fade" id="pills-registered" role="tabpanel" aria-labelledby="pills-registered-tab">...</div>
+            <div class="tab-pane fade" id="pills-activity" role="tabpanel" aria-labelledby="pills-activity-tab">...</div>
+          </div>
+<!-- 
           <div class="container d-flex flex-row flex-wrap justify-content-around">
                 <div class="card m-2 bg-light" style="width: 23rem;">
                                             
@@ -144,6 +210,7 @@
                     </div>
                         <ul class="list-group list-group-flush">
                         <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
+                        <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
                         <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
                         <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
                         <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
@@ -152,16 +219,16 @@
                         </ul>
                     <div class="card-body">
                         <div class="card-body d-flex justify-content-center align-items-center">
-                            <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                           
                             <div class="container d-flex flex-row justify-content-around">
                             <button type="button" class="btn  btn-primary">Place Bid</button>
                             <button type="button" class="btn  btn-success">Parcel Details</button>
                         </div>
-                            <!-- </div> -->
+                           
                         </div>
                     </div>
                 </div>
-          </div>
+          </div> -->
 
 
 
