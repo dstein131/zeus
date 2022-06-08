@@ -3,107 +3,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/65cfa62bcc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <script src="https://kit.fontawesome.com/65cfa62bcc.js" crossorigin="anonymous"></script>
+   
   
     
     <title>Auctions</title>
 </head>
 
 <body>
-    <navbar>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
                 <img src="/zeus-logo-xlarge-white[3828].png" height="30px" alt="">
               </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/index.html">Dashboard <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Auctions
-                    </a>
-                    <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item bg-dark text-light" href="/auctions.html">Online Auctions</a>
-                      <a class="dropdown-item bg-dark text-light" href="/demoAuctions.html">*Practice/Demonstration* Auctions</a>
-                      
-                    </div>
-                  </li>
-               
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Tools
-                  </a>
-                  <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item bg-dark text-light" href="tools.html">Admin Tools</a>
-                    <a class="dropdown-item bg-dark text-light" href="#">Treasurer Tools</a>
-                    <a class="dropdown-item bg-dark text-light" href="/manageBidders.html">Manage Bidder</a>
-                    <a class="dropdown-item bg-dark text-light" href="#">Manage County</a>
-                    <a class="dropdown-item bg-dark text-light" href="#">Manage Sales</a>
-                    <a class="dropdown-item bg-dark text-light" href="#">Content Management</a>
-                    <a class="dropdown-item bg-dark text-light" href="#">Inquiry</a>
-                    <a class="dropdown-item bg-dark text-light" href="#">Inquiry (Legacy)</a>
-                  </div>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Inquiry
-                    </a>
-                    <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item bg-dark text-light" href="#">Inquiry</a>
-                      <a class="dropdown-item bg-dark text-light" href="#">Inquiry(Legacy)</a>
-                      <a class="dropdown-item bg-dark text-light" href="#">Something else here</a>
-                    </div>
-                  </li> -->
-                  
-                
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Auctions
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item " href="/auctions.html">Online Auctions</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item " href="/demoAuctions.html">Practice/Demo Auctions</a></li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Support
-                        </a>
-                        <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item bg-dark text-light" href="#">Support (Knowledge Base)</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">Help</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">FAQs</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">Release Notes</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">Tutorials</a>
-                        </div>
-                      </li>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tools
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="/tools.html">Admin Tools</a></li>
+                  <li><a class="dropdown-item" href="#">Treasurer Tools</a></li>
+                  <li><hr class="dropdown-divider "></li>
+                  <li><a class="dropdown-item" href="/manageBidders.html">Manage Bidder</a></li>
+                  <li><a class="dropdown-item" href="#">Manage County</a></li>
+                  <li><a class="dropdown-item" href="#">Manage Sales</a></li>
+                  <li><hr class="dropdown-divider "></li>
+                  <li><a class="dropdown-item" href="/contentManagement.html">Content Management</a></li>
+                  <li><hr class="dropdown-divider "></li>
+                  <li><a class="dropdown-item" href="#">Inquiry</a></li>
+                  <li><a class="dropdown-item" href="#">Inquiry Legacyt</a></li>
                 </ul>
-                <ul class="navbar-nav"> 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Notifications
-                        </a>
-                        <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item bg-dark text-light" href="#">Map</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">All</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">Notifications</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">Here</a>
-                        </div>
-                    </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ${Username}
-                        </a>
-                        <div class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item bg-dark text-light" href="/myAccount.html">My Account</a>
-                          <a class="dropdown-item bg-dark text-light" href="#">Logout</a>
-                        </div>
-                      </li>
-                    </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav navbar-center mx-auto mb-2 mb-lg-0">
               
-            </div>
-          </nav>
-    </navbar>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="https://qaauction.sriservices.com/contact.php" target="_blank">Support (Knowledge Base)</a></li>
+                  <li><a class="dropdown-item" href="https://help.sriservices.com/knowledge" target="_blank">Help</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Release Notes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Tutorials</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Notificaitons
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+
+                      <li><a class="dropdown-item" href="#">Map</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">all</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Notificaitons</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ${userName}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
    
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -435,9 +437,6 @@
 
     
     <script src="countries.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
