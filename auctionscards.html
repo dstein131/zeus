@@ -115,133 +115,274 @@
 
 
     <div class="container mb-3 p-0" style="border: 1px solid #8bc34a; width: 99%;">
-        <nav class="nav justify-content-between" style="background-color: #8bc34a">
-            <div style="display: flex">
-                <span class="navbar-text text-white pl-2">
-                Auctions
-                  </span>
-            <!-- <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#">Disabled</a> -->
-            </div>
-            <form class="form-inline mb-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="search..." aria-label="Search">
-                <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-              </form>
-          </nav>
+        
+                    <nav class="nav justify-content-between" style="background-color: #8bc34a">
+                        <div style="display: flex">
+                            <span class="navbar-text text-white ps-2">
+                            Auctions
+                            </span>
+                        <!-- <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link disabled" href="#">Disabled</a> -->
+                        </div>
+                        <form class="form-inline mb-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="search..." aria-label="Search">
+                            <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+                        </form>
+                    </nav>
           
-          <div class="container">
-              <div class="row d-flex flex-row flex-wrap justify-content-around ">
+            <div class="container">
+                        <div class="row d-flex flex-row flex-wrap justify-content-around ">
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
 
-            <div class="card m-2 bg-light" style="width: 23rem;">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
-                  <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
-                  <p class="card-text mb-0 "><small>Items: 33</p></small>
-                  <p class="card-text mb-0"><small>Bidders: 2</p></small>
-                  
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
-                </ul>
-                <div class="card-body">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                  <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-warning ms-1">Not Started</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
 
-                  <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-danger ms-1">Closed</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-danger ms-1">Closed</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-warning ms-1">Not Started</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2 bg-light" style="width: 23rem;">
+                                        
+                                <div class="card-body">
+                                    <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
+                                    <p class="card-text mt-2 mb-0">Bid Down | No Deposit | Auto Approval</p>
+                                    <p class="card-text mb-0 "><small>Items: 33</p></small>
+                                    <p class="card-text mb-0"><small>Bidders: 2</p></small>
+                                    
+                                </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light"><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    <li class="list-group-item bg-light"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
+                                    </ul>
+                                <div class="card-body">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
+                                        <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
                         </div>
-                </div>
-              </div>
+                        
 
-              <div class="card m-2 bg-light" style="width: 22rem;">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
-                  <p class="card-text">(Bid Down / No Deposit / Auto Approval)</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item "><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
-                </ul>
-                <div class="card-body">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+                            
+                              
+            </div>
 
-                  <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
-                        </div>
-                </div>
-              </div>
+              
+              
 
-              <div class="card m-2 bg-light" style="width: 22rem;">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Indiana Tax Sale Auction</h5><span class="badge bg-success ms-1">Active</span>
-                  <p class="card-text">(Bid Down / No Deposit / Auto Approval)</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item "><small>Registration Starts: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item"><small>Sale Starts: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item"><small>Registration Ends: 10/13/2022 12:00 AM EDT</small></li>
-                  <li class="list-group-item"><small>Sale Ends: 10/13/2022 12:00 AM EDT</small></li>
-                </ul>
-                <div class="card-body">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-sm btn-outline-success">Enter Auction</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Manage Bidder</button>
+              
 
-                  <button type="button" class="btn btn-sm btn-outline-success">Invoices</button>
-                  <button type="button" class="btn btn-sm btn-outline-success">Edit Bidders</button>
-                        </div>
-                </div>
-              </div>
-
-              <div class="card m-2  bg-light" style="width: 18rem;">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Florida Tax Sale Auction</h5>
-                  <p class="card-text">(Bid Down / No Deposit / Auto Approval)</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-              <div class="card  m-2  bg-light" style="width: 18rem;">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">(Bid Down / No Deposit / Auto Approval)</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-          </div>
-        </div>
-     <div>
+         
+        
+   
          
 
  
