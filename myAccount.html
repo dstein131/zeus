@@ -157,11 +157,7 @@
 
 
 <body>
-    <!-- <center><div style="display: flex; flex-direction:row; padding-top: 1em; padding-left: 1em; padding-right: 1em; background-color: #e7e7e7; width: fit-content;"> -->
 
-
-    <!-- </div>
-</center> -->
 
     <div class="container mt-5">
         <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
@@ -193,7 +189,8 @@
 
                     <div class="col">
                         <div class="container d-flex flex-row mt-3 ">
-                            <div><img src="./person_3_FILL0_wght400_GRAD0_opsz48.svg"  alt="" style="width: 6.75em;"></div>
+                            <div><img src="./person_3_FILL0_wght400_GRAD0_opsz48.svg" alt="" style="width: 6.75em;">
+                            </div>
                             <div>
                                 <p class="h3">SRI Username</p>
                                 <p>zeusQA@sriservices.com</p>
@@ -206,41 +203,33 @@
                         <div class="container mt-3 ">
 
                             <table class="table">
-                                <!-- <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead> -->
+
                                 <tbody>
                                     <tr>
-                                        <!-- <th scope="row">1</th> -->
+
                                         <td>User Activity</td>
                                         <td><b>${activites}</b></td>
 
                                     </tr>
                                     <tr>
-                                        <!-- <th scope="row">2</th> -->
+
                                         <td>Active Bids</td>
                                         <td><b>0</b></td>
 
                                     </tr>
                                     <tr>
-                                        <!-- <th scope="row">3</th> -->
+
                                         <td>Total Committed</td>
                                         <td><b>$0.00</b></td>
 
                                     </tr>
                                     <tr>
-                                        <!-- <th scope="row">3</th> -->
                                         <td>My Auctions</td>
                                         <td><b>0</b></td>
 
                                     </tr>
                                     <tr>
-                                        <!-- <th scope="row">3</th> -->
+
                                         <td>Leading Bids</td>
                                         <td><b>${leadingBids}</b></td>
 
@@ -248,201 +237,201 @@
                                 </tbody>
                             </table>
                         </div>
+
                     </div>
+
                 </div>
 
 
+                <p>
 
-
-
-                <div class="container mt-5">
-                    <ul class="nav nav-pills " id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active border" id="activebid-tab" data-bs-toggle="tab" href=""
-                                data-bs-target="#activebid" role="tab" aria-controls="home" aria-selected="true">Active
-                                Bids</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link border" id="totalcommit-tab" data-bs-toggle="tab" href=""
-                                data-bs-target="#totalcommit" role="tab" aria-controls="profile"
-                                aria-selected="false">Total Committed</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link border" id="myaucts-tab" data-bs-toggle="tab" href=""
-                                data-bs-target="#myaucts" role="tab" aria-controls="contact" aria-selected="false">My
-                                Auctions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link border" id="leadingbids-tab" data-bs-toggle="tab" href=""
-                                data-bs-target="#leadingbids" role="tab" aria-controls="contact"
-                                aria-selected="false">Leading Bids</a>
-                        </li>
-
-                    </ul>
-                    <div class="tab-content border" id="myTabContent2">
-                        <div class="tab-pane fade show active" id="activebid" role="tabpanel"
-                            aria-labelledby="home-tab">
-                            <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
-                                <nav class="nav justify-content-between" style="background-color: #00bcd4">
-                                    <div style="display: flex">
-                                        <span class="navbar-text text-white ps-2">
-                                            Active Bids
-                                        </span>
-                                        <!-- <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link disabled" href="#">Disabled</a> -->
-                                    </div>
-                                    <form class="form-inline mb-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="search..."
-                                            aria-label="Search">
-                                        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-                                    </form>
-                                </nav>
-                                content
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="totalcommit" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
-                                <nav class="nav justify-content-between" style="background-color: #00bcd4">
-                                    <div style="display: flex">
-                                        <span class="navbar-text text-white pl-2">
-                                            Total Committed
-                                        </span>
-                                        <!-- <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link disabled" href="#">Disabled</a> -->
-                                    </div>
-                                    <form class="form-inline mb-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="search..."
-                                            aria-label="Search">
-                                        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-                                    </form>
-                                </nav>
-                                content
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="myaucts" role="tabpanel" aria-labelledby="myaucts-tab">
-                            <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
-                                <nav class="nav justify-content-between" style="background-color: #00bcd4">
-                                    <div style="display: flex">
-                                        <span class="navbar-text text-white pl-2">
-                                            My Auctions
-                                        </span>
-                                        <!-- <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link disabled" href="#">Disabled</a> -->
-                                    </div>
-                                    <form class="form-inline mb-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="search..."
-                                            aria-label="Search">
-                                        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-                                    </form>
-                                </nav>
-                                content
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="leadingbids" role="tabpanel" aria-labelledby="certlist-tab">
-                            <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
-                                <nav class="nav justify-content-between" style="background-color: #00bcd4">
-                                    <div style="display: flex">
-                                        <span class="navbar-text text-white pl-2">
-                                            Leading Bids
-                                        </span>
-                                        <!-- <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link disabled" href="#">Disabled</a> -->
-                                    </div>
-                                    <form class="form-inline mb-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="search..."
-                                            aria-label="Search">
-                                        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
-                                    </form>
-                                </nav>
-                                content
-                            </div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ab"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Active Bids
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#tc"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Total Committed
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ma"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        My Auctions
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lb"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Leading Bids
+                    </button>
+                </p>
+                <div class="collapse" id="ab">
+                    <div class="card card-body">
+                        <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
+                            <nav class="nav justify-content-between" style="background-color: #00bcd4">
+                                <div style="display: flex">
+                                    <span class="navbar-text text-white ps-2">
+                                        Active Bids
+                                    </span>
+                                </div>
+                                <form class="form-inline mb-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="search..."
+                                        aria-label="Search">
+                                </form>
+                            </nav>
+                            content
                         </div>
                     </div>
-
-
+                </div>
+                <div class="collapse" id="tc">
+                    <div class="card card-body">
+                        <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
+                            <nav class="nav justify-content-between" style="background-color: #00bcd4">
+                                <div style="display: flex">
+                                    <span class="navbar-text text-white ps-2">
+                                        Total Committed
+                                    </span>
+                                </div>
+                                <form class="form-inline mb-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="search..."
+                                        aria-label="Search">
+                                </form>
+                            </nav>
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="ma">
+                    <div class="card card-body">
+                        <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
+                            <nav class="nav justify-content-between" style="background-color: #00bcd4">
+                                <div style="display: flex">
+                                    <span class="navbar-text text-white ps-2">
+                                        My Auctions
+                                    </span>
+                                </div>
+                                <form class="form-inline mb-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="search..."
+                                        aria-label="Search">
+                                </form>
+                            </nav>
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="lb">
+                    <div class="card card-body">
+                        <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
+                            <nav class="nav justify-content-between" style="background-color: #00bcd4">
+                                <div style="display: flex">
+                                    <span class="navbar-text text-white ps-2">
+                                        Leading Bids
+                                    </span>
+                                </div>
+                                <form class="form-inline mb-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="search..."
+                                        aria-label="Search">
+                                </form>
+                            </nav>
+                            content
+                        </div>
+                    </div>
+                </div>
                 </div>
 
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
-                    <nav class="nav justify-content-between" style="background-color: #00bcd4">
-                        <div style="display: flex">
-                            <span class="navbar-text text-white ps-2">
-                                Modify Account
-                            </span>
-                      
-                        </div>
-                        
-                    </nav>
-                    <div class="container">
-                        <p class="h4 mt-2">Username: ${userName}</p>
-                        <div class="row">
-                            <div class="co col-6">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Retype Password</label>
-                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container mt-3 mb-3 p-0" style="border: 1px solid #00bcd4; width: 98%">
+                        <nav class="nav justify-content-between" style="background-color: #00bcd4">
+                            <div style="display: flex">
+                                <span class="navbar-text text-white ps-2">
+                                    Modify Account
+                                </span>
+
                             </div>
+
+                        </nav>
+                        <div class="container">
+                            <p class="h4 mt-2">Username: ${userName}</p>
+                            <div class="row">
+                                <div class="co col-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Retype Password</label>
+                                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                </div>
 
 
                                 <div class="col col-6">
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Bid Confirmation Email</label>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Bid Confirmation
+                                            Email</label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Out Bid Email</label>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Out Bid
+                                            Email</label>
                                     </div>
                                 </div>
 
+                            </div>
+
+
+                            <button class="btn btn-primary mb-3" type="submit" id="inputGroupFileAddon04">Save
+                                Changes</button>
                         </div>
-
-
-                        <button class="btn btn-primary mb-3" type="submit" id="inputGroupFileAddon04">Save Changes</button>
                     </div>
                 </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">This is just a
+                    front-end shell</div>
+                <div class="tab-pane fade" id="certlist" role="tabpanel" aria-labelledby="certlist-tab">Maybe all the
+                    tools
+                    get wrapped in here?</div>
+                <div class="tab-pane fade" id="actlist" role="tabpanel" aria-labelledby="certlist-tab">Activities!</div>
+
+
+
+
+
+
+
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">This is just a
-                front-end shell</div>
-            <div class="tab-pane fade" id="certlist" role="tabpanel" aria-labelledby="certlist-tab">Maybe all the tools
-                get wrapped in here?</div>
-            <div class="tab-pane fade" id="actlist" role="tabpanel" aria-labelledby="certlist-tab">Activities!</div>
+
+
+
+
+
         </div>
 
-    </div>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
 </body>
 
