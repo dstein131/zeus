@@ -16,8 +16,16 @@
             background-color: 9C27b0;
             color: white;
             font-weight: 550;
-
         }
+
+        @media screen and (max-width: 768px) {
+            .dots {
+                flex-direction: column !important;
+                align-items: space-between !important;
+            }
+        }
+            
+        
     </style>
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -176,7 +184,7 @@
         <div id="reg1" class="container mt-3">
 
 
-            <div class="d-flex container justify-content-around flex-row flex-wrap" >
+            <div class="d-flex container justify-content-around flex-row flex-wrap dots" >
                 <div>
                     <div class="d-flex flex-row align-items-center">
                         <img class="me-3" src="./register1Active.svg" alt="">
@@ -298,7 +306,7 @@
         <div id="reg2" class="container mt-3" style="display: none">
 
 
-            <div class="d-flex container justify-content-around flex-row flex-wrap" >
+            <div class="d-flex container justify-content-around flex-row flex-wrap dots" >
                 <div>
                     <div class="d-flex flex-row align-items-center">
                         <img class="me-3" src="./registration1NotActive.svg" alt="">
@@ -444,7 +452,7 @@
         <div id="reg3" class="container mt-3" style="display: none">
 
 
-            <div class="d-flex container justify-content-around flex-row flex-wrap" >
+            <div class="d-flex container justify-content-around flex-row flex-wrap dots" >
                 <div>
                     <div class="d-flex flex-row align-items-center">
                         <img class="me-3" src="./registration1NotActive.svg" alt="">
