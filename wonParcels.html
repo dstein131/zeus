@@ -7,143 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Tools</title>
-   
+
     <style>
 
     </style>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
-            <img src="/zeus-logo-xlarge-white[3828].png" height="30px" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="/index.html">Dashboard</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Auctions
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item " href="/auctions.html">Online Auctions</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item " href="/demoAuctions.html">Practice/Demo Auctions</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item " href="/auctionscards.html">New Auction Layout Design</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="">Won Parcels</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="">Watch List</a></li>
-                    </ul>
 
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Tools
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="/tools.html">Admin Tools</a></li>
-                        <li><a class="dropdown-item" href="#">Treasurer Tools</a></li>
-                        <li>
-                            <hr class="dropdown-divider ">
-                        </li>
-                        <li><a class="dropdown-item" href="/manageBidders.html">Manage Bidder</a></li>
-                        <li><a class="dropdown-item" href="#">Manage County</a></li>
-                        <li><a class="dropdown-item" href="#">Manage Sales</a></li>
-                        <li>
-                            <hr class="dropdown-divider ">
-                        </li>
-                        <li><a class="dropdown-item" href="/contentManagement.html">Content Management</a></li>
-                        <li>
-                            <hr class="dropdown-divider ">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Inquiry</a></li>
-                        <li><a class="dropdown-item" href="#">Inquiry Legacyt</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav navbar-center mx-auto mb-2 mb-lg-0">
+<!-- Navbar gets scripted here  -->
+<div id="navbar"></div>
 
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Support
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="https://qaauction.sriservices.com/contact.php"
-                                target="_blank">Support (Knowledge Base)</a></li>
-                        <li><a class="dropdown-item" href="https://help.sriservices.com/knowledge"
-                                target="_blank">Help</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">FAQs</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Release Notes</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Tutorials</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Notificaitons
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-
-                        <li><a class="dropdown-item" href="#">Map</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">all</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Notificaitons</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        ${userName}
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
+<!-- breadcrumbs -->
 
 <nav class="bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb ms-2">
@@ -154,11 +27,11 @@
 
 
 <body>
-    <!-- <center><div style="display: flex; flex-direction:row; padding-top: 1em; padding-left: 1em; padding-right: 1em; background-color: #e7e7e7; width: fit-content;"> -->
-        
+
+    <!-- main container -->
+
     <div class="container-sm">
-        <div class=" rounded p-0"
-            style=" border: 1px solid #8BC34A;">
+        <div class=" rounded p-0" style=" border: 1px solid #8BC34A;">
             <div class=" d-flex  " style="background-color: #8BC34A;">
                 <span class="text-light pt-2 ps-3 h5">Please make a selection:</span>
 
@@ -166,50 +39,32 @@
 
             <div class="container pt-3">
                 <button type="button" class="btn btn-secondary mb-3">Export</button>
-                <table class="table table-striped table-inverse">
+                <table class="table table-responsive table-striped table-inverse" id="parcelTable">
                     <thead>
-                      <tr>
-                        <th scope="col">Export</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Your Winning Parcels</th>
-                       
-                      </tr>
+                        <tr>
+                            <th scope="col">Export</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Your Winning Parcels</th>
+
+                        </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                       
-                        <td>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                        <td>2021 City of Harahan, Louisiana Tax Sale</td>
-                        <td>123</td>
-                      </tr>
-                      <tr>
-                        
-                        <td>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                        <td>Lafayette 2022 Test Sale</td>
-                        <td>313</td>
-                      </tr>
-                      <tr>
-                        
-                        <td>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-                        <td>@Kenner Redemption TEST</td>
-                        <td>442</td>
-                      </tr>
+
+                    <tbody id="tableBody">
+
+                        <!-- Won Parcels get mapped to this table body from the script below -->
+
                     </tbody>
-                  </table>    
+                </table>
             </div>
-
-
-                
-           
-
         </div>
     </div>
 
-   
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+<script src="/winningParcels.js"></script>
+<script src="/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </body>
 

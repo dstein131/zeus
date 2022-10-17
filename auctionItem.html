@@ -1,563 +1,173 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <title>Auctions</title>
-    <style>
-    .nav-pills .nav-link.active, .nav-pills .nav-link.active:hover,.nav-pills .nav-link.active:focus{
-    background-color:9C27b0;
-    color:white;
-    font-weight:550;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Auctions</title>
+  <style>
+    .nav-pills .nav-link.active,
+    .nav-pills .nav-link.active:hover,
+    .nav-pills .nav-link.active:focus {
+      background-color: 9C27b0;
+      color: white;
+      font-weight: 550;
 
     }
-    </style>
+  </style>
 </head>
 
+<!-- Navbar -->
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/zeus-logo-xlarge-white[3828].png" height="30px" alt="">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html">Dashboard</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Auctions
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item " href="/auctions.html">Online Auctions</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="/auctionscards.html">New Auction Layout Design</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="/demoAuctions.html">Practice/Demo Auctions</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tools
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="/tools.html">Admin Tools</a></li>
-                  <li><a class="dropdown-item" href="#">Treasurer Tools</a></li>
-                  <li><hr class="dropdown-divider "></li>
-                  <li><a class="dropdown-item" href="/manageBidders.html">Manage Bidder</a></li>
-                  <li><a class="dropdown-item" href="#">Manage County</a></li>
-                  <li><a class="dropdown-item" href="#">Manage Sales</a></li>
-                  <li><hr class="dropdown-divider "></li>
-                  <li><a class="dropdown-item" href="/contentManagement.html">Content Management</a></li>
-                  <li><hr class="dropdown-divider "></li>
-                  <li><a class="dropdown-item" href="#">Inquiry</a></li>
-                  <li><a class="dropdown-item" href="#">Inquiry Legacyt</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav navbar-center mx-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Support
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="https://qaauction.sriservices.com/contact.php" target="_blank">Support (Knowledge Base)</a></li>
-                  <li><a class="dropdown-item" href="https://help.sriservices.com/knowledge" target="_blank">Help</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">FAQs</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Release Notes</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Tutorials</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Notificaitons
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+  <div id="navbar"></div>
+<!-- end of navbar -->
+  <!-- Breadcrumb -->
 
-                      <li><a class="dropdown-item" href="#">Map</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">all</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Notificaitons</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ${userName}
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
-                  </li>
-            </ul>
-          </div>
-          
+  <nav class="bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb ms-2">
+        <li class="breadcrumb-item"><a href="/index.html">Dashoard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Parcel</li>
+    </ol>
+</nav>
+
+<!-- end of breadcrumbs -->
+
+  <!-- Main Container with Pill Navs -->
+
+  <div class="container mb-3 p-0" style="border: 1px solid #8bc34a; width: 98%;">
+    <nav class="nav justify-content-between" style="background-color: #8bc34a">
+      <div style="display: flex">
+        <span class="navbar-text text-white ps-2">
+          ${saleName} Tax Sale Auction
+        </span>
+
+      </div>
+
+    </nav>
+    <ul class="nav nav-pills nav-fill mb-3 mt-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+          role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rules</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-itemlist-tab" data-bs-toggle="pill" data-bs-target="#pills-itemlist"
+          type="button" role="tab" aria-controls="pills-itemlist" aria-selected="false">Item List</button>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-multibid-tab" data-bs-toggle="pill" data-bs-target="#pills-multibid"
+          type="button" role="tab" aria-controls="pills-multibid" aria-selected="false">Multi-Bid Upload</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-registered-tab" data-bs-toggle="pill" data-bs-target="#pills-registered"
+          type="button" role="tab" aria-controls="pills-registered" aria-selected="false">Registered Bidders</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-activity-tab" data-bs-toggle="pill" data-bs-target="#pills-activity"
+          type="button" role="tab" aria-controls="pills-activity" aria-selected="false">Bidder Activity</button>
+      </li>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+      <div class="tab-pane fade  show active" id="pills-itemlist" role="tabpanel" aria-labelledby="pills-itemlist-tab">
+
+        <!-- Parcel Container  -->
+        <div class="container d-flex flex-row flex-wrap justify-content-around" id="auctionContainer">
+
         </div>
-      </nav>
-    
-      <nav  class="bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb ms-2">
-          <li class="breadcrumb-item"><a href="/index.html">Dashboard</a></li>
-          <li class="breadcrumb-item"><a href="/auctions.html">Auctions</a></li>
-          <!-- <li class="breadcrumb-item active" aria-current="page"> ${saleName} Tax Sale Auction </li> -->
-        </ol>
-      </nav>
 
 
-
- 
-
-      <div class="container mb-3 p-0" style="border: 1px solid #8bc34a; width: 98%;">
-        <nav class="nav justify-content-between" style="background-color: #8bc34a">
-            <div style="display: flex">
-                <span class="navbar-text text-white ps-2">
-                ${saleName} Tax Sale Auction 
-                  </span>
-         
-            </div>
-            
-          </nav>
-          <ul class="nav nav-pills nav-fill mb-3 mt-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rules</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-itemlist-tab" data-bs-toggle="pill" data-bs-target="#pills-itemlist" type="button" role="tab" aria-controls="pills-itemlist" aria-selected="false">Item List</button>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-multibid-tab" data-bs-toggle="pill" data-bs-target="#pills-multibid" type="button" role="tab" aria-controls="pills-multibid" aria-selected="false">Multi-Bid Upload</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-registered-tab" data-bs-toggle="pill" data-bs-target="#pills-registered" type="button" role="tab" aria-controls="pills-registered" aria-selected="false">Registered Bidders</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-activity-tab" data-bs-toggle="pill" data-bs-target="#pills-activity" type="button" role="tab" aria-controls="pills-activity" aria-selected="false">Bidder Activity</button>
-              </li>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade  show active" id="pills-itemlist" role="tabpanel" aria-labelledby="pills-itemlist-tab">
-                <div class="container d-flex flex-row flex-wrap justify-content-around">
-                    <div class="card m-2 bg-light" style="width: 23rem;">
-                                                
-                        <div class="card-body">
-                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                            <p class="card-text mb-0"><small><b>Legal: </b>
-                                5 'A' 66' X 103'</small></p>
-                            
-                            
-                        </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            </ul>
-                        <div class="card-body">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                                <div class="container d-flex flex-row justify-content-around">
-                                <button type="button" class="btn  btn-primary">Place Bid</button>
-                                <button type="button" class="btn  btn-success">Parcel Details</button>
-                            </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card m-2 bg-light" style="width: 23rem;">
-                                                
-                        <div class="card-body">
-                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                            <p class="card-text mb-0"><small><b>Legal: </b>
-                                5 'A' 66' X 103'</small></p>
-                            
-                            
-                        </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            </ul>
-                        <div class="card-body">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                                <div class="container d-flex flex-row justify-content-around">
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Place Bid
-                                  </button>
-                                <!-- <button type="button" class="btn  btn-primary">Place Bid</button> -->
-                                <button type="button" class="btn  btn-success">Parcel Details</button>
-                            </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card m-2 bg-light" style="width: 23rem;">
-                                                
-                        <div class="card-body">
-                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                            <p class="card-text mb-0"><small><b>Legal: </b>
-                                5 'A' 66' X 103'</small></p>
-                            
-                            
-                        </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            </ul>
-                        <div class="card-body">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                                <div class="container d-flex flex-row justify-content-around">
-                                <button type="button" class="btn  btn-primary">Place Bid</button>
-                                <button type="button" class="btn  btn-success">Parcel Details</button>
-                            </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card m-2 bg-light" style="width: 23rem;">
-                                                
-                        <div class="card-body">
-                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                            <p class="card-text mb-0"><small><b>Legal: </b>
-                                5 'A' 66' X 103'</small></p>
-                            
-                            
-                        </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            </ul>
-                        <div class="card-body">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                                <div class="container d-flex flex-row justify-content-around">
-                                <button type="button" class="btn  btn-primary">Place Bid</button>
-                                <button type="button" class="btn  btn-success">Parcel Details</button>
-                            </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card m-2 bg-light" style="width: 23rem;">
-                                                
-                        <div class="card-body">
-                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                            <p class="card-text mb-0"><small><b>Legal: </b>
-                                5 'A' 66' X 103'</small></p>
-                            
-                            
-                        </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            </ul>
-                        <div class="card-body">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                                <div class="container d-flex flex-row justify-content-around">
-                                <button type="button" class="btn  btn-primary">Place Bid</button>
-                                <button type="button" class="btn  btn-success">Parcel Details</button>
-                            </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card m-2 bg-light" style="width: 23rem;">
-                                                
-                        <div class="card-body">
-                            <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                            <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                            <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                            <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                            <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                            <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                            <p class="card-text mb-0"><small><b>Legal: </b>
-                                5 'A' 66' X 103'</small></p>
-                            
-                            
-                        </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                            <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                            <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                            <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                            </ul>
-                        <div class="card-body">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                                <div class="container d-flex flex-row justify-content-around">
-                                <button type="button" class="btn  btn-primary">Place Bid</button>
-                                <button type="button" class="btn  btn-success">Parcel Details</button>
-                            </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-multibid" role="tabpanel" aria-labelledby="pills-multibid-tab">...</div>
-            <div class="tab-pane fade" id="pills-registered" role="tabpanel" aria-labelledby="pills-registered-tab">...</div>
-            <div class="tab-pane fade" id="pills-activity" role="tabpanel" aria-labelledby="pills-activity-tab">...</div>
-          </div>
-<!-- 
-          <div class="container d-flex flex-row flex-wrap justify-content-around">
-                <div class="card m-2 bg-light" style="width: 23rem;">
-                                            
-                    <div class="card-body">
-                        <h6 class="card-title">Parcel: 38-01-27-404-054.001-011</h6>
-                        <p class="card-text mt-2 mb-0"><small><b>Owner: </b>Myers Jennifer</small></p>
-                        <p class="card-text mb-0"><small><b>Address: </b>VACANT LAND E MAPLE ST</small></p>
-                        <p class="card-text mb-0"><small><b>City: </b>Indianapolis</small></p>
-                        <p class="card-text mb-0"><small><b>State: </b>IN</small></p>
-                        <p class="card-text mb-0"><small><b>Zip: </b>46202</small></p>
-                        <p class="card-text mb-0"><small><b>Legal: </b>
-                            5 'A' 66' X 103'</small></p>
-                        
-                        
-                    </div>
-                        <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-light"><small><b>Batch: </b>1</small></li>
-                        <li class="list-group-item bg-light"><small><b>Lead Bid: </b>$113.13</small></li>
-                        <li class="list-group-item bg-light"><small><b>Face Amount: </b>$902.33</small></li>
-                        <li class="list-group-item bg-light"><small><b>Registration Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                        <li class="list-group-item bg-light"><small><b>Registration Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                        <li class="list-group-item bg-light"><small><b>Sale Starts: </b>10/13/2022 12:00 AM EDT</small></li>
-                        <li class="list-group-item bg-light"><small><b>Sale Ends: </b>10/13/2022 12:00 AM EDT</small></li>
-                        </ul>
-                    <div class="card-body">
-                        <div class="card-body d-flex justify-content-center align-items-center">
-                           
-                            <div class="container d-flex flex-row justify-content-around">
-                            <button type="button" class="btn  btn-primary">Place Bid</button>
-                            <button type="button" class="btn  btn-success">Parcel Details</button>
-                        </div>
-                           
-                        </div>
-                    </div>
-                </div>
-          </div> -->
-
-
-
-
-
-
-
-
-          <!-- <div class="table-resonsive">
-            <table class="table mx-auto" >
-            <thead>
-              <tr class="d-flex">
-                
-                <th scope="col" ><small>Item ID</small></th>
-                <th scope="col"><small>Batch</th></small>
-                <th scope="col"><small>Item Information</th></small>
-                <th scope="col"><small>Face Amount</th></small>
-                <th scope="col"><small>Lead Bid</th></small>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="d-flex">
-          
-                <td>
-                    <ul style="list-style-type:none; margin:0; padding: 0;">
-                        <li><small><b>Item ID: </b>1234293</small></li>
-                        <li><small><b>Sale ID: </b>123123124293</small></li>
-                        <li><button type="button" class="btn btn-info btn-sm mt-1">♡</button></li>
-                 
-                    </ul>
-                </td>
-                <td>
-                  <ul style="list-style-type:none; margin:0; padding: 0;">
-                      <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
-                      <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
-                  </ul>
-                </td>
-                <td>
-                    <ul style="list-style-type:none; margin:0; padding: 0;">
-                        <li><b>Starting:</b> 10/13/2022 12:00 AM EDT</li>
-                        <li><b>Ending:</b> 10/13/2022 11:00 PM EDT</li>
-                    </ul>
-                  </td>
-                <td>
-                    <ul style="list-style-type:none; margin:0; padding: 0;">
-                        <li><b>Registration ends:</b></li>
-                        <li>10/13/2022 6:00 PM EDT</li>
-                     
-                    </ul>
-                </td>
-              </tr>
-              
-             
-              <tr class="d-flex">
-              
-                <td class="col-4">Showing 1 to 25 of 1 entries</td>
-                <td class="col-4">
-                    <div style="display: flex; flex-direction: column">
-                   
-                    </div>
-                </td>
-                <td class="col-4">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-sm justify-content-end">
-                          <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                          </li>
-                        </ul>
-                      </nav>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
-          
-        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-multibid" role="tabpanel" aria-labelledby="pills-multibid-tab">...</div>
+      <div class="tab-pane fade" id="pills-registered" role="tabpanel" aria-labelledby="pills-registered-tab">...</div>
+      <div class="tab-pane fade" id="pills-activity" role="tabpanel" aria-labelledby="pills-activity-tab">...</div>
     </div>
 
-        <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Place Bid on <b>Item ID: ${itemId}</b></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       <h4>CURRENT BID: None</h4>
-       <p><small>You must bid in increments of  1.00%</small></p>
-       <p><small><b>The next bid is already entered for you.</b>
-        Not the amount you want to bid? Easily change the amount, make sure you follow the bidding rules set by auction.</small></p>
-    
-      <div class="accordion mb-2" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Bid Type Explainations
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><small>
-              <p><b>Direct Bid:</b></Direct> In a <b>bid up dollar</b> or <b>bid down rate</b> auction, a direct bid is used to immediately set your bid to the value entered.</p>
-              <p><b>Proxy Bid:</b> In a <b>bid up dollar</b> auction, a proxy is set to the highest amount a user is willing to pay. If another user bids on the same item, Zeus will automatically increase the original bid, up to the proxy amount, following the established bid increments. If another bidder surpasses a proxy, they become the leading bidder. A proxy bid should be greater than the amount entered as a direct bid.</p>
-              <p>Similarly, in a  <b>bid down rate</b>  auction, a proxy is set to the lowest rate a user is willing to bid. Again, Zeus will bid on behalf of the user according to the established bid increments until the bid is surpassed.</p>
-            </small>
+
+  </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Place Bid on <b>Item ID: ${itemId}</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>CURRENT BID: None</h4>
+          <p><small>You must bid in increments of 1.00%</small></p>
+          <p><small><b>The next bid is already entered for you.</b>
+              Not the amount you want to bid? Easily change the amount, make sure you follow the bidding rules set by
+              auction.</small></p>
+
+          <div class="accordion mb-2" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Bid Type Explainations
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><small>
+                    <p><b>Direct Bid:</b></Direct> In a <b>bid up dollar</b> or <b>bid down rate</b> auction, a direct
+                      bid is used to immediately set your bid to the value entered.</p>
+                    <p><b>Proxy Bid:</b> In a <b>bid up dollar</b> auction, a proxy is set to the highest amount a user
+                      is willing to pay. If another user bids on the same item, Zeus will automatically increase the
+                      original bid, up to the proxy amount, following the established bid increments. If another bidder
+                      surpasses a proxy, they become the leading bidder. A proxy bid should be greater than the amount
+                      entered as a direct bid.</p>
+                    <p>Similarly, in a <b>bid down rate</b> auction, a proxy is set to the lowest rate a user is willing
+                      to bid. Again, Zeus will bid on behalf of the user according to the established bid increments
+                      until the bid is surpassed.</p>
+                  </small>
+                </div>
+              </div>
+            </div>
+
+
           </div>
+
+          <div class="mb-1 container border rounded bg-light pt-2">
+            <label for="exampleFormControlInput1" class="form-label">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><b>Direct Bid (The bid will immediately be set
+                    to this value)</b></label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100.00%">
+              </div>
+            </label>
+            <label for="exampleFormControlInput1" class="form-label">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><b>Proxy Bid (The minimum rate you are willing
+                    to bid.</b></label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100.00%">
+              </div>
+            </label>
           </div>
         </div>
-        
-        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Place Bid</button>
+        </div>
       </div>
-      <!-- <b>Direct Bid:</b>
-      <p class="mb-2"> In a bid up dollar or bid down rate auction, a direct bid is used to immediately set your bid to the value entered.</p>
-      <p class="mb-2">Similarly, in a  bid down rate  auction, a proxy is set to the lowest rate a user is willing to bid. Again, Zeus will bid on behalf of the user according to the established bid increments until the bid is surpassed.</p> -->
-      <div class="mb-1 container border rounded bg-light pt-2">
-        <label for="exampleFormControlInput1" class="form-label">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"><b>Direct Bid (The bid will immediately be set to this value)</b></label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100.00%">
-          </div>
-        </label>
-        <label for="exampleFormControlInput1" class="form-label">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"><b>Proxy Bid (The minimum rate you are willing to bid.</b></label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100.00%">
-          </div>
-        </label>
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Place Bid</button>
-      </div>
-      </div>
+    </div>
   </div>
-</div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/parcelMap.js"></script>
+  <script src="/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

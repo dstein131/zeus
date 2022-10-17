@@ -7,103 +7,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/zeus-logo-xlarge-white[3828].png" height="30px" alt="">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="/index.html">Dashboard</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Auctions
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item " href="/auctions.html">Online Auctions</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="/demoAuctions.html">Practice/Demo Auctions</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="/auctionscards.html">New Auction Layout Design</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tools
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="/tools.html">Admin Tools</a></li>
-                  <li><a class="dropdown-item" href="#">Treasurer Tools</a></li>
-                  <li><hr class="dropdown-divider "></li>
-                  <li><a class="dropdown-item" href="/manageBidders.html">Manage Bidder</a></li>
-                  <li><a class="dropdown-item" href="#">Manage County</a></li>
-                  <li><a class="dropdown-item" href="#">Manage Sales</a></li>
-                  <li><hr class="dropdown-divider "></li>
-                  <li><a class="dropdown-item" href="/contentManagement.html">Content Management</a></li>
-                  <li><hr class="dropdown-divider "></li>
-                  <li><a class="dropdown-item" href="#">Inquiry</a></li>
-                  <li><a class="dropdown-item" href="#">Inquiry Legacyt</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav navbar-center mx-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Support
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="https://qaauction.sriservices.com/contact.php" target="_blank">Support (Knowledge Base)</a></li>
-                  <li><a class="dropdown-item" href="https://help.sriservices.com/knowledge" target="_blank">Help</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">FAQs</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Release Notes</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Tutorials</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Notificaitons
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-
-                      <li><a class="dropdown-item" href="#">Map</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">all</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Notificaitons</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ${userName}
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
-                  </li>
-            </ul>
-          </div>
-          
-        </div>
-      </nav>
+    <div id="navbar"></div>
     
       <nav  class="bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb ms-2">
@@ -255,7 +159,7 @@
           
         </div>
     </div>
- 
+    <script src="/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
