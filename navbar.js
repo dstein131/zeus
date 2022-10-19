@@ -25,7 +25,7 @@ function renderNavBar() {
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item " href="/wonParcels.html">Won Parcels</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item " href="">Watch List</a></li>
+              <li><a class="dropdown-item " href="/watchList.html">Watch List</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
