@@ -313,10 +313,10 @@
         <button class="nav-link" id="pills-registered-tab" data-bs-toggle="pill" data-bs-target="#pills-registered"
           type="button" role="tab" aria-controls="pills-registered" aria-selected="false">Registered Bidders</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-activity-tab" data-bs-toggle="pill" data-bs-target="#pills-activity"
           type="button" role="tab" aria-controls="pills-activity" aria-selected="false">Bidder Activity</button>
-      </li>
+      </li> -->
       </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -476,7 +476,28 @@
           </ol>
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-registered" role="tabpanel" aria-labelledby="pills-registered-tab">...</div>
+      <div class="tab-pane fade" id="pills-registered" role="tabpanel" aria-labelledby="pills-registered-tab">
+        <div class="container pt-3">
+          <button type="button" class="btn btn-secondary mb-3">Export</button>
+          <table class="table table-responsive table-striped table-inverse" id="regbidtab">
+              <thead>
+                  <tr>
+                      <th scope="col">Bidder Name</th>
+                      <th scope="col">User Name</th>
+                      <th scope="col">Bidder Number</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Options</th>
+                  </tr>
+              </thead>
+
+              <tbody id="regbody">
+
+                  <!-- Won Parcels get mapped to this table body from the script below -->
+
+              </tbody>
+          </table>
+      </div>
+      </div>
       <div class="tab-pane fade" id="pills-activity" role="tabpanel" aria-labelledby="pills-activity-tab">...</div>
     </div>
 
@@ -555,6 +576,7 @@
   </div>
   <script src="/parcelMap.js"></script>
   <script src="/navbar.js"></script>
+  <script src="/registeredBidders.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
