@@ -44,7 +44,7 @@ function renderNavBar() {
       <div class="collapse navbar-collapse" id="navbarText">
       <div class="ms-auto">
       <button class="btn btn-primary" type="submit">Login</button>
-      <button class="btn btn-secondary" type="submit">Register</button>
+      <button class="btn btn-success" type="submit">Register</button>
       </div>
       
         </div>
