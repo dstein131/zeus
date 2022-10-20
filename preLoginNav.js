@@ -16,7 +16,7 @@ function renderNavBar() {
             <a class="nav-link" aria="page" href="/whyRegister.html">Why Register?</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" aria="page" href="">Learn More</a>
+          <a class="nav-link" aria="page" href="/learnMore.html">Learn More</a>
         </li>
           
       </div>
