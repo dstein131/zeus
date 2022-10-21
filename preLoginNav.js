@@ -43,12 +43,44 @@ function renderNavBar() {
       </div>
       <div class="collapse navbar-collapse" id="navbarText">
       <div class="ms-auto">
-      <button class="btn btn-primary" type="submit">Login</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navModal">
+        Login
+     </button>
       <a href="/registerUser.html"><button class="btn btn-success" type="submit">Register</button></a>
       </div>
       
+        
+
         </div>
-  </nav> `;
+
+        <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="navModalLabel">Please Enter Your Account Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Username:</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Password:</span>
+        <input type="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+     </nav> `;
 
     // find the element with the id of "navbar" and insert the navbar html into it
     document.getElementById("navbar").innerHTML = navBarRender;
