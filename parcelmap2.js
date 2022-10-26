@@ -297,7 +297,9 @@ function mapAuctionCardArray(auctionCardArray) {
             class="parcelBut col-12 col-lg-3  d-flex flex-column align-items-center justify-content-center">
 
 
-            <button type="button" class="btn btn-sm btn-primary mb-1">Place Bid</button>
+            <button type="button" class="btn btn-sm btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Place Bid
+                        </button>
             <button type="button" class="btn btn-sm btn-success mb-1 ">Parcel Details</button>
 
 
