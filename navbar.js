@@ -90,7 +90,7 @@ function renderNavBar() {
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
                   <li><a class="dropdown-item" href="/myAccount.html">My Account</a></li>
-                  <li><a class="dropdown-item href="/preLogin.html">Logout</a></li>
+                  <li><a class="dropdown-item" href="/preLogin.html">Logout</a></li>
               </li>
         </ul>
       </div>
