@@ -34,8 +34,11 @@ function renderNavBar() {
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="/tools.html">Admin Tools</a></li>
+              <li><a class="dropdown-item" href="/tools.html">Routing Numbers</a></li>
+              
               <li><a class="dropdown-item" href="#">Treasurer Tools</a></li>
               <li><hr class="dropdown-divider "></li>
+              <li><a class="dropdown-item" href="/tools.html">Manage Users</a></li>
               <li><a class="dropdown-item" href="/manageBidders.html">Manage Bidder</a></li>
               <li><a class="dropdown-item" href="#">Manage County</a></li>
               <li><a class="dropdown-item" href="#">Manage Sales</a></li>
