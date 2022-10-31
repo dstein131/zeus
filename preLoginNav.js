@@ -1,3 +1,6 @@
+// create function that navigates to /index.html //
+
+
 function renderNavBar() {
     const navBarRender = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -60,7 +63,7 @@ function renderNavBar() {
         <h5 class="modal-title" id="navModalLabel">Please Enter Your Account Info</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form>
+      <form onsubmit="goToIndex()">
       <div class="modal-body">
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Username:</span>
@@ -73,7 +76,8 @@ function renderNavBar() {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Login</button>
+        
+        <a href="/index.html"><button type="button" class="btn btn-primary">Login</button></a>
       </div>
       </form>
     </div>
@@ -87,3 +91,7 @@ function renderNavBar() {
     }
 
 renderNavBar()
+
+function goToIndex() {
+  window.location.href = "/index.html";
+}
