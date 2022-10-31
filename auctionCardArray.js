@@ -165,8 +165,9 @@ function mapAuctionCardArray(auctionCardArray) {
                <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
                <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
                <div class="d-flex justify-content-around mt-2">
-               <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary">Register</button>
-               <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success">Enter Auction</button>
+               <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
+               <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
+
                     </div>
                 </div>
             </div>
@@ -184,8 +185,8 @@ function mapAuctionCardArray(auctionCardArray) {
                <p class="card-text mt-2 mb-0"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
                <p class="card-text mt-2 mb-0"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
                <div class="d-flex justify-content-around mt-2">
-               <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary">Register</button>
-               <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success">Enter Auction</button>
+               <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
+               <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
                     </div>
                 </div>
             </div>
@@ -203,9 +204,9 @@ function mapAuctionCardArray(auctionCardArray) {
                <p class="card-text mt-2 mb-0"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
                <p class="card-text mt-2 mb-0"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
                 <div class="d-flex justify-content-around mt-2">
-                <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary">Register</button>
-                <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success">Enter Auction</button>
-                </div>
+                <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
+                <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
+                 </div>
                 </div>
             </div>
             </div>`;
