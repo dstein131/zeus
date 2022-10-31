@@ -33,7 +33,7 @@ function mapRegisteredBidders(registeredBidders) {
                     <div class="d-row flex-wrap justify-content-center align-items-center flex-column ">
                     <button type="button" class="btn btn-sm btn-primary">Modify</button>
                    
-                    <button type="button" class="btn btn-sm btn-secondary d-flex flex-row justify-content-between ">W9<span> </span> 
+                    <button type="button" class="btn btn-sm btn-secondary d-flex my-1 flex-row justify-content-between ">W9<span> </span> 
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               
