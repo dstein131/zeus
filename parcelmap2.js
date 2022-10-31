@@ -298,9 +298,12 @@ function mapAuctionCardArray(auctionCardArray) {
 
 
             <button type="button" class="btn btn-sm btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                        <img src="/images/gavel_FILL0_wght400_GRAD0_opsz48.svg" class="me-1" alt="gavel" style="width: 20px; height: 20px;">
                         Place Bid
+                        </div>
                         </button>
-            <button type="button" class="btn btn-sm btn-success mb-1 ">Parcel Details</button>
+            
 
 
 
