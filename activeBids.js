@@ -60,7 +60,7 @@ function mapActiveBids(activeBidArray) {
     var auctionContainer = document.getElementById("auctionContainer");
     auctionContainer.innerHTML = activeBidArray.map(function (activeBid) {
         return `
-        <div class="card m-2 bg-light" style="width: 21rem;">
+        <div class="card m-2 bg-light" style="width: 16rem;">
            <div class="card-body ">
                 <h6 class="card-title">Sale: ${activeBid.title}</h6>
                 <h6 class="card-title text-muted">End Date: ${activeBid.endDate}</h6>
