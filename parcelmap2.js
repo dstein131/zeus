@@ -317,4 +317,3 @@ function mapAuctionCardArray(auctionCardArray) {
 }
 
 mapAuctionCardArray(auctionCardArray);
-
