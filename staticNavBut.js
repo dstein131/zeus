@@ -8,7 +8,7 @@ function renderStaticNavBut() {
     <a href="/auctionscards.html"> 
         <button type="button" 
                 class="btn btn-success navbut m-2" 
-                style="width: 201px; border-radius: 30px">
+                style="width: 190px; border-radius: 30px">
                 <div class="d-flex align-items-center justify-content-center">
                     <img src="/images/visibility_FILL0_wght400_GRAD0_opsz48.svg" 
                         alt="..."
@@ -21,7 +21,7 @@ function renderStaticNavBut() {
     <a href="/demoAuctions.html">
         <button type="button" 
             class="btn btn-success navbut m-2" 
-            style="width: 201px; border-radius: 30px">
+            style="width: 190px; border-radius: 30px">
                 <div class="d-flex align-items-center justify-content-center">
                     <img src="/images/quiz_FILL0_wght400_GRAD0_opsz48.svg"
                         alt="..."
@@ -34,7 +34,7 @@ function renderStaticNavBut() {
     <a href="/manageBidders.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
-    style="width: 201px; border-radius: 30px">
+    style="width: 190px; border-radius: 30px">
         <div class="d-flex align-items-center justify-content-center">
             <img src="/images/settings_FILL0_wght400_GRAD0_opsz48.svg"
                 alt="..."
@@ -47,7 +47,7 @@ function renderStaticNavBut() {
     <a href="/wonParcels.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
-    style="width: 201px; border-radius: 30px">
+    style="width: 190px; border-radius: 30px">
         <div class="d-flex align-items-center justify-content-center">
             <img src="/images/workspace_premium_FILL0_wght400_GRAD0_opsz48.svg"
                 alt="..."
@@ -61,7 +61,7 @@ function renderStaticNavBut() {
     <a href="/invoices.html">
     <button type="button" 
     class="btn btn-success navbut m-2" 
-    style="width: 201px; border-radius: 30px">
+    style="width: 190px; border-radius: 30px">
         <div class="d-flex align-items-center justify-content-center">
             <img src="/images/receipt_long_FILL0_wght400_GRAD0_opsz48.svg"
                 alt="..."
