@@ -78,12 +78,12 @@ function mapMyAuctions(myAuctions) {
             <p class="card-text">Lead Bid: ${myAuction.leadBid}</p>
             <p class="card-text">Your Bid: ${myAuction.yourBid}</p>
             <div class="d-flex align-items-center justify-content-center">
-            <button type="button" class="btn btn-primary">
+            <a href="/auctionItem.html"><button type="button" class="btn btn-primary">
                 <div class="d-flex align-items-center justify-content-center">
                 <img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" alt="..." style="width: 20px; height: 20px; margin-right: 5px;">
                 Enter Auction
                 </div>
-            </button>
+            </button></a>
             </div>
 
         </div>
