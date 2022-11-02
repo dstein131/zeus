@@ -59,20 +59,25 @@ var activeBidArray = [
 function mapActiveBids(activeBidArray) {
     var auctionContainer = document.getElementById("auctionContainer");
     auctionContainer.innerHTML = activeBidArray.map(function (activeBid) {
-        return `
-        <div class="card m-2 bg-light" style="width: 16rem;">
-           <div class="card-body ">
-                <h6 class="card-title">Sale: ${activeBid.title}</h6>
-                <h6 class="card-title text-muted">End Date: ${activeBid.endDate}</h6>
-                <h6 class="card-title text-muted">Parcel ID: ${activeBid.parcelId}</h6>
-                <h6 class="card-title text-muted">Face Amount: ${activeBid.faceAmount}</h6>
-                <h6 class="card-title text-muted">Lead Bid: ${activeBid.leadBid}</h6>
-                <h6 class="card-title text-muted">Your Bid: ${activeBid.yourBid}</h6>
+        return `<div class="card m-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">${activeBid.title}</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Ends: ${activeBid.endDate}</h6>
+            <p class="card-text">Item: ${activeBid.item}</p>
+            <p class="card-text">Face Amount: ${activeBid.faceAmount}</p>
+            <p class="card-text">Lead Bid: ${activeBid.leadBid}</p>
+            <p class="card-text">Your Bid: ${activeBid.yourBid}</p>
+            <div class="d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-primary">
                 <div class="d-flex align-items-center justify-content-center">
-                <button class="btn btn-sm btn-primary mt-2">View Auction</button>
+                <img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" alt="..." style="width: 20px; height: 20px; margin-right: 5px;">
+                Enter Auction
                 </div>
+            </button>
             </div>
-        </div>`
+
+        </div>
+    </div>`
     }
     ).join("");
 }
