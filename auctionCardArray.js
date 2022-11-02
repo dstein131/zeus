@@ -154,9 +154,9 @@ function mapAuctionCardArray(auctionCardArray) {
     auctionCardContainer.innerHTML = auctionCardArray.map(function (auctionCard, index) {
         if (auctionCard.auctionStatus === "Active") {
             return `<div id="${index}" class="row d-flex flex-row flex-wrap justify-content-around ">
-            <div class="card m-2 bg-light" style="width: 21rem;">
+            <div class="card m-2 bg-light" style="width: 22rem; ">
                <div class="card-body">
-               <h5 class="card-title">${auctionCard.auctionName}</h5>
+               <h6 class="card-title">${auctionCard.auctionName}</h6>
                <span class="badge bg-success ms-1">Active</span>
                <small><p class="card-text mt-2 mb-0"> ${auctionCard.auctionBidType} | ${auctionCard.auctionDepositType} | ${auctionCard.auctionApprovalType}</p>
                <p class="card-text mt-2 mb-0 pt-2 border-top"> items: <b>${auctionCard.auctionItems}</b> | bidders: <b>${auctionCard.auctionBidders}</b></p>
@@ -164,7 +164,7 @@ function mapAuctionCardArray(auctionCardArray) {
                <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction Start:</b> ${auctionCard.auctionStart}</p>    
                <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
                <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
-               <div class="d-flex justify-content-around mt-2">
+               <div class="d-flex justify-content-around align-items-center mt-3">
                <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
                <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
 
@@ -174,17 +174,17 @@ function mapAuctionCardArray(auctionCardArray) {
             </div>`;
         } if (auctionCard.auctionStatus === "Closed") {
             return `<div id="${index}" class="row d-flex flex-row flex-wrap justify-content-around ">
-            <div class="card m-2 bg-light" style="width: 21rem;">
+            <div class="card m-2 bg-light" style="width: 22rem;  ">
                <div class="card-body">
-               <h5 class="card-title">${auctionCard.auctionName}</h5>
+               <h6 class="card-title">${auctionCard.auctionName}</h6>
                <span class="badge bg-danger ms-1">Closed</span>
                <small><p class="card-text mt-2 mb-0"> ${auctionCard.auctionBidType} | ${auctionCard.auctionDepositType} | ${auctionCard.auctionApprovalType}</p>
-               <p class="card-text mt-2 mb-0"> items: <b>${auctionCard.auctionItems}</b> | bidders: <b>${auctionCard.auctionBidders}</b></p>
-               <p class="card-text mt-2 mb-0"> <b>Registration Start:</b> ${auctionCard.auctionRegStart}</p>
-               <p class="card-text mt-2 mb-0"> <b>Auction Start:</b> ${auctionCard.auctionStart}</p>
-               <p class="card-text mt-2 mb-0"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
-               <p class="card-text mt-2 mb-0"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
-               <div class="d-flex justify-content-around mt-2">
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> items: <b>${auctionCard.auctionItems}</b> | bidders: <b>${auctionCard.auctionBidders}</b></p>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Registration Start:</b> ${auctionCard.auctionRegStart}</p>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction Start:</b> ${auctionCard.auctionStart}</p>    
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
+               <div class="d-flex justify-content-around align-items-center mt-3">
                <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
                <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
                     </div>
@@ -193,19 +193,19 @@ function mapAuctionCardArray(auctionCardArray) {
             </div>`;
         } else {
             return `<div id="${index}" class="row d-flex flex-row flex-wrap justify-content-around ">
-            <div class="card m-2 bg-light" style="width: 21rem;">
+            <div class="card m-2 bg-light" style="width: 22rem; ">
                <div class="card-body">
-               <h5 class="card-title">${auctionCard.auctionName}</h5>
+               <h6 class="card-title">${auctionCard.auctionName}</h6>
                <span class="badge bg-warning ms-1">Not Started</span>
                <small><p class="card-text mt-2 mb-0"> ${auctionCard.auctionBidType} | ${auctionCard.auctionDepositType} | ${auctionCard.auctionApprovalType}</p>
-               <p class="card-text mt-2 mb-0"> items: <b>${auctionCard.auctionItems}</b> | bidders: <b>${auctionCard.auctionBidders}</b></p>
-               <p class="card-text mt-2 mb-0"> <b>Registration Start:</b> ${auctionCard.auctionRegStart}</p>
-               <p class="card-text mt-2 mb-0"> <b>Auction Start:</b> ${auctionCard.auctionStart}</p>
-               <p class="card-text mt-2 mb-0"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
-               <p class="card-text mt-2 mb-0"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
-                <div class="d-flex justify-content-around mt-2">
-                <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
-                <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> items: <b>${auctionCard.auctionItems}</b> | bidders: <b>${auctionCard.auctionBidders}</b></p>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Registration Start:</b> ${auctionCard.auctionRegStart}</p>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction Start:</b> ${auctionCard.auctionStart}</p>    
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Registration End:</b> ${auctionCard.auctionRegEnd}</p>
+               <p class="card-text mt-2 mb-0 pt-2 border-top"> <b>Auction End:</b> ${auctionCard.auctionEnd}</p></small>
+               <div class="d-flex justify-content-around align-items-center mt-3">
+               <button onclick="window.location.href='/saleRegister.html'" type="button" class="btn  btn-primary d-flex justify-content-center align-items-center"><img src="/images/app_registration_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px">Register</button>
+               <button onclick="window.location.href='/auctionItem.html'" type="button" class="btn  btn-success d-flex justify-content-center align-items-center"><img src="/images/login_FILL0_wght400_GRAD0_opsz48.svg" style="width: 20px; height: 20px; margin-right: 5px"> Enter Auction</button>
                  </div>
                 </div>
             </div>
