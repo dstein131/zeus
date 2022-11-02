@@ -63,7 +63,7 @@ function mapActiveBids(activeBidArray) {
         <div class="card-body">
             <h5 class="card-title text-center">${activeBid.title}</h5>
             <h6 class="card-subtitle mb-2 text-muted text-center">Ends: ${activeBid.endDate}</h6>
-            <p class="card-text">Item: ${activeBid.item}</p>
+            <p class="card-text">Item: ${activeBid.parcelId}</p>
             <p class="card-text">Face Amount: ${activeBid.faceAmount}</p>
             <p class="card-text">Lead Bid: ${activeBid.leadBid}</p>
             <p class="card-text">Your Bid: ${activeBid.yourBid}</p>
